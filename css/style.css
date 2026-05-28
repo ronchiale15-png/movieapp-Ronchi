@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color:#0e0d0d; 
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid red; 
+    background-color: rgb(29, 29, 29);
+}
+
+.logo {
+    font-size: 1px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo img {
+     height: 40px;
+      width: auto;
+       display: block;
+    } 
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: crimson; 
+}
+
+.content-container {
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.movie-card {
+    background-color: rgb(220, 9, 9);
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.35);
+}
+
+.movie-card .poster {
+    width: 100%;
+    height: 220px; 
+    overflow: hidden;
+    background: #111;
+}
+
+.movie-card .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.movie-card .title {
+    padding: 8px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background: rgba(0,0,0,0.15);
+}
+
+.app-title {
+    text-align: center;
+    font-size: 28px;
+    color: chartreuse; 
+    font-weight: bold;
+    margin-top: auto;
+    padding: 20px 0;
+}
+
+
+.top-strip {
+    background-color: #0088CC;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.top-strip-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 40px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.top-strip-content a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.movie-card img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
+.movie-card span { display:block; margin-top:6px; color:#fff; font-size:14px; text-align:center; }
