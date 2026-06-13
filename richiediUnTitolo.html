@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieApp - Richiedi un Titolo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo1.png" alt="Logo MovieApp">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="movies.html">Film</a>
+            <a href="series.html">Serie TV</a>
+            <a href="anime.html">Anime</a>
+            <a href="archivio.html">Archivio</a>
+            <a href="richiediUnTitolo.html">Richiedi Titolo</a>
+            <a href="premium.html">Premium</a>
+            <a href="profile.html">Profilo</a>
+        </div>
+    </nav>
+    <main class="content-container">
+        <form style="max-width: 500px; margin: 30px auto; background-color: #181818; padding: 30px; border: 2px solid #007bff; border-radius: 6px; display: flex; flex-direction: column; gap: 15px;">
+            <h2 style="text-align: center; color: red;">Suggerisci un Film o Serie</h2>
+            <label>Titolo Richiesto:</label>
+            <input type="text" placeholder="Es. Inception" required style="padding: 10px; border-radius: 4px; border: none; font-size: 16px;">
+            <label>Tipologia:</label>
+            <select style="padding: 10px; border-radius: 4px; border: none; font-size: 16px;">
+                <option value="movie">Film</option>
+                <option value="tv">Serie TV</option>
+                <option value="anime">Anime</option>
+            </select>
+            <button type="submit" style="background-color: rgb(220, 9, 9); color: white; padding: 12px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 16px;">Invia Richiesta</button>
+        </form>
+        <h1 class="app-title"></h1>
+    </main>
+
+</html>
